@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище zoomagModelContainer" CdmEntityContainer="zoomagEntities1">
+    <EntitySetMapping Name="Animals">
+      <EntityTypeMapping TypeName="zoomagModel.Animals">
+        <MappingFragment StoreEntitySet="Animals">
+          <ScalarProperty Name="ID_Animal" ColumnName="ID_Animal" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Species" ColumnName="Species" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="zoomagModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="ID_Customer" ColumnName="ID_Customer" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="zoomagModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID_Order" ColumnName="ID_Order" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Animal_ID" ColumnName="Animal_ID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllDataWithoutIDs">
+      <EntityTypeMapping TypeName="zoomagModel.AllDataWithoutIDs">
+        <MappingFragment StoreEntitySet="AllDataWithoutIDs">
+          <ScalarProperty Name="AnimalName" ColumnName="AnimalName" />
+          <ScalarProperty Name="AnimalSpecies" ColumnName="AnimalSpecies" />
+          <ScalarProperty Name="AnimalAge" ColumnName="AnimalAge" />
+          <ScalarProperty Name="AnimalPrice" ColumnName="AnimalPrice" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="OrderQuantity" ColumnName="OrderQuantity" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

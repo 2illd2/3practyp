@@ -1,0 +1,25 @@
+﻿<Window x:Class="ZOOBD.DSZOO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZOOBD"
+        mc:Ignorable="d"
+        Title="для DS" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="AnimalDgr" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding AnimalName}" Header="имя животного"/>
+                <DataGridTextColumn Binding="{Binding AnimalSpecies}" Header="тип"/>
+                <DataGridTextColumn Binding="{Binding AnimalAge}" Header="возраст"/>
+                <DataGridTextColumn Binding="{Binding AnimalPrice}" Header="цена"/>
+                <DataGridTextColumn Binding="{Binding CustomerName}" Header="имя владельца"/>
+                <DataGridTextColumn Binding="{Binding CustomerEmail}" Header="почта"/>
+                <DataGridTextColumn Binding="{Binding CustomerPhone}" Header="телефон"/>
+                <DataGridTextColumn Binding="{Binding OrderQuantity}" Header="количество" />
+                <DataGridTextColumn Binding="{Binding OrderDate}" Header="дата исполнения заказа"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
